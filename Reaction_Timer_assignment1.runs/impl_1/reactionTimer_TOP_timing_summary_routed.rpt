@@ -1,0 +1,1436 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Apr 11 21:29:54 2018
+| Host         : DESKTOP-LPJ199K running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file reactionTimer_TOP_timing_summary_routed.rpt -rpx reactionTimer_TOP_timing_summary_routed.rpx -warn_on_violation
+| Design       : reactionTimer_TOP
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.20 2017-11-01
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There is 1 register/latch pin with no clock driven by root clock pin: COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[1]/Q (HIGH)
+
+ There are 16 register/latch pins with no clock driven by root clock pin: reactionTimer/CLOCK_1KHZ/dividedClk_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: stateTest/CLOCK_1KHZ_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: stateTest/CLOCK_1KHZ_EDGE/pipeline_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: triggerPre_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: triggerPre_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[1]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 54 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 3 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 28 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -0.372       -1.591                      7                  841        0.133        0.000                      0                  841        4.500        0.000                       0                   376  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                -0.372       -1.591                      7                  841        0.133        0.000                      0                  841        4.500        0.000                       0                   376  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            7  Failing Endpoints,  Worst Slack       -0.372ns,  Total Violation       -1.591ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.133ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -0.372ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[13]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.678ns  (logic 7.791ns (80.501%)  route 1.887ns (19.499%))
+  Logic Levels:           6  (CARRY4=4 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[3])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[3]
+                         net (fo=2, routed)           0.742    11.793    stateTest/randomNumberGenerator/seed1__1_n_102
+    SLICE_X11Y71         LUT2 (Prop_lut2_I0_O)        0.124    11.917 r  stateTest/randomNumberGenerator/seed1_carry__0_i_4/O
+                         net (fo=1, routed)           0.000    11.917    stateTest/randomNumberGenerator/seed1_carry__0_i_4_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.449 r  stateTest/randomNumberGenerator/seed1_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    12.449    stateTest/randomNumberGenerator/seed1_carry__0_n_0
+    SLICE_X11Y72         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.688 r  stateTest/randomNumberGenerator/seed1_carry__1/O[2]
+                         net (fo=1, routed)           0.595    13.283    stateTest/randomNumberGenerator/seed1_carry__1_n_5
+    SLICE_X12Y72         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    14.118 r  stateTest/randomNumberGenerator/seed0_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    14.118    stateTest/randomNumberGenerator/seed0_carry__5_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    14.455 r  stateTest/randomNumberGenerator/seed0_carry__6/O[1]
+                         net (fo=2, routed)           0.549    15.003    stateTest/randomNumberGenerator/p_2_in[30]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[13])
+                                                     -0.632    14.632    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.632    
+                         arrival time                         -15.003    
+  -------------------------------------------------------------------
+                         slack                                 -0.372    
+
+Slack (VIOLATED) :        -0.301ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[12]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.619ns  (logic 7.686ns (79.907%)  route 1.933ns (20.093%))
+  Logic Levels:           6  (CARRY4=4 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[3])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[3]
+                         net (fo=2, routed)           0.742    11.793    stateTest/randomNumberGenerator/seed1__1_n_102
+    SLICE_X11Y71         LUT2 (Prop_lut2_I0_O)        0.124    11.917 r  stateTest/randomNumberGenerator/seed1_carry__0_i_4/O
+                         net (fo=1, routed)           0.000    11.917    stateTest/randomNumberGenerator/seed1_carry__0_i_4_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.449 r  stateTest/randomNumberGenerator/seed1_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    12.449    stateTest/randomNumberGenerator/seed1_carry__0_n_0
+    SLICE_X11Y72         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.688 r  stateTest/randomNumberGenerator/seed1_carry__1/O[2]
+                         net (fo=1, routed)           0.595    13.283    stateTest/randomNumberGenerator/seed1_carry__1_n_5
+    SLICE_X12Y72         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    14.118 r  stateTest/randomNumberGenerator/seed0_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    14.118    stateTest/randomNumberGenerator/seed0_carry__5_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    14.350 r  stateTest/randomNumberGenerator/seed0_carry__6/O[0]
+                         net (fo=2, routed)           0.594    14.944    stateTest/randomNumberGenerator/p_2_in[29]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[12])
+                                                     -0.621    14.643    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.643    
+                         arrival time                         -14.944    
+  -------------------------------------------------------------------
+                         slack                                 -0.301    
+
+Slack (VIOLATED) :        -0.296ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[14]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.607ns  (logic 7.710ns (80.252%)  route 1.897ns (19.748%))
+  Logic Levels:           6  (CARRY4=4 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[3])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[3]
+                         net (fo=2, routed)           0.742    11.793    stateTest/randomNumberGenerator/seed1__1_n_102
+    SLICE_X11Y71         LUT2 (Prop_lut2_I0_O)        0.124    11.917 r  stateTest/randomNumberGenerator/seed1_carry__0_i_4/O
+                         net (fo=1, routed)           0.000    11.917    stateTest/randomNumberGenerator/seed1_carry__0_i_4_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.449 r  stateTest/randomNumberGenerator/seed1_carry__0/CO[3]
+                         net (fo=1, routed)           0.000    12.449    stateTest/randomNumberGenerator/seed1_carry__0_n_0
+    SLICE_X11Y72         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.688 r  stateTest/randomNumberGenerator/seed1_carry__1/O[2]
+                         net (fo=1, routed)           0.595    13.283    stateTest/randomNumberGenerator/seed1_carry__1_n_5
+    SLICE_X12Y72         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    14.118 r  stateTest/randomNumberGenerator/seed0_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    14.118    stateTest/randomNumberGenerator/seed0_carry__5_n_0
+    SLICE_X12Y73         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    14.374 r  stateTest/randomNumberGenerator/seed0_carry__6/O[2]
+                         net (fo=2, routed)           0.559    14.932    stateTest/randomNumberGenerator/p_2_in[31]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[14])
+                                                     -0.627    14.637    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.637    
+                         arrival time                         -14.932    
+  -------------------------------------------------------------------
+                         slack                                 -0.296    
+
+Slack (VIOLATED) :        -0.238ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[11]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.544ns  (logic 7.636ns (80.010%)  route 1.908ns (19.990%))
+  Logic Levels:           5  (CARRY4=4 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    12.275 r  stateTest/randomNumberGenerator/seed1_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.275    stateTest/randomNumberGenerator/seed1_carry_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.514 r  stateTest/randomNumberGenerator/seed1_carry__0/O[2]
+                         net (fo=1, routed)           0.595    13.109    stateTest/randomNumberGenerator/seed1_carry__0_n_5
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.944 r  stateTest/randomNumberGenerator/seed0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    13.944    stateTest/randomNumberGenerator/seed0_carry__4_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    14.275 r  stateTest/randomNumberGenerator/seed0_carry__5/O[3]
+                         net (fo=2, routed)           0.594    14.869    stateTest/randomNumberGenerator/p_2_in[28]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[11])
+                                                     -0.633    14.631    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.631    
+                         arrival time                         -14.869    
+  -------------------------------------------------------------------
+                         slack                                 -0.238    
+
+Slack (VIOLATED) :        -0.197ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[9]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.504ns  (logic 7.642ns (80.407%)  route 1.862ns (19.593%))
+  Logic Levels:           5  (CARRY4=4 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    12.275 r  stateTest/randomNumberGenerator/seed1_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.275    stateTest/randomNumberGenerator/seed1_carry_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.514 r  stateTest/randomNumberGenerator/seed1_carry__0/O[2]
+                         net (fo=1, routed)           0.595    13.109    stateTest/randomNumberGenerator/seed1_carry__0_n_5
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.944 r  stateTest/randomNumberGenerator/seed0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    13.944    stateTest/randomNumberGenerator/seed0_carry__4_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    14.281 r  stateTest/randomNumberGenerator/seed0_carry__5/O[1]
+                         net (fo=2, routed)           0.549    14.829    stateTest/randomNumberGenerator/p_2_in[26]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[9])
+                                                     -0.632    14.632    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.632    
+                         arrival time                         -14.829    
+  -------------------------------------------------------------------
+                         slack                                 -0.197    
+
+Slack (VIOLATED) :        -0.158ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[10]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.470ns  (logic 7.561ns (79.843%)  route 1.909ns (20.157%))
+  Logic Levels:           5  (CARRY4=4 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    12.275 r  stateTest/randomNumberGenerator/seed1_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.275    stateTest/randomNumberGenerator/seed1_carry_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.514 r  stateTest/randomNumberGenerator/seed1_carry__0/O[2]
+                         net (fo=1, routed)           0.595    13.109    stateTest/randomNumberGenerator/seed1_carry__0_n_5
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.944 r  stateTest/randomNumberGenerator/seed0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    13.944    stateTest/randomNumberGenerator/seed0_carry__4_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    14.200 r  stateTest/randomNumberGenerator/seed0_carry__5/O[2]
+                         net (fo=2, routed)           0.595    14.795    stateTest/randomNumberGenerator/p_2_in[27]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[10])
+                                                     -0.627    14.637    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.637    
+                         arrival time                         -14.795    
+  -------------------------------------------------------------------
+                         slack                                 -0.158    
+
+Slack (VIOLATED) :        -0.029ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[7]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.335ns  (logic 7.427ns (79.562%)  route 1.908ns (20.438%))
+  Logic Levels:           4  (CARRY4=3 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.537    12.305 r  stateTest/randomNumberGenerator/seed1_carry/O[2]
+                         net (fo=1, routed)           0.595    12.900    stateTest/randomNumberGenerator/seed1_carry_n_5
+    SLICE_X12Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.735 r  stateTest/randomNumberGenerator/seed0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    13.735    stateTest/randomNumberGenerator/seed0_carry__3_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    14.066 r  stateTest/randomNumberGenerator/seed0_carry__4/O[3]
+                         net (fo=2, routed)           0.594    14.660    stateTest/randomNumberGenerator/p_2_in[24]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[7])
+                                                     -0.633    14.631    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.631    
+                         arrival time                         -14.660    
+  -------------------------------------------------------------------
+                         slack                                 -0.029    
+
+Slack (MET) :             0.012ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[5]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.295ns  (logic 7.433ns (79.967%)  route 1.862ns (20.033%))
+  Logic Levels:           4  (CARRY4=3 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.537    12.305 r  stateTest/randomNumberGenerator/seed1_carry/O[2]
+                         net (fo=1, routed)           0.595    12.900    stateTest/randomNumberGenerator/seed1_carry_n_5
+    SLICE_X12Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.735 r  stateTest/randomNumberGenerator/seed0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    13.735    stateTest/randomNumberGenerator/seed0_carry__3_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    14.072 r  stateTest/randomNumberGenerator/seed0_carry__4/O[1]
+                         net (fo=2, routed)           0.549    14.620    stateTest/randomNumberGenerator/p_2_in[22]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[5])
+                                                     -0.632    14.632    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.632    
+                         arrival time                         -14.620    
+  -------------------------------------------------------------------
+                         slack                                  0.012    
+
+Slack (MET) :             0.051ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[6]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.261ns  (logic 7.352ns (79.388%)  route 1.909ns (20.612%))
+  Logic Levels:           4  (CARRY4=3 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.537    12.305 r  stateTest/randomNumberGenerator/seed1_carry/O[2]
+                         net (fo=1, routed)           0.595    12.900    stateTest/randomNumberGenerator/seed1_carry_n_5
+    SLICE_X12Y70         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.735 r  stateTest/randomNumberGenerator/seed0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    13.735    stateTest/randomNumberGenerator/seed0_carry__3_n_0
+    SLICE_X12Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    13.991 r  stateTest/randomNumberGenerator/seed0_carry__4/O[2]
+                         net (fo=2, routed)           0.595    14.586    stateTest/randomNumberGenerator/p_2_in[23]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[6])
+                                                     -0.627    14.637    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.637    
+                         arrival time                         -14.586    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+Slack (MET) :             0.062ns  (required time - arrival time)
+  Source:                 stateTest/randomNumberGenerator/seed1__0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            stateTest/randomNumberGenerator/seed1__1/B[8]
+                            (rising edge-triggered cell DSP48E1 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        9.256ns  (logic 7.537ns (81.432%)  route 1.719ns (18.568%))
+  Logic Levels:           5  (CARRY4=4 DSP48E1=1)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.024ns = ( 15.024 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.723     5.325    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y28          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__0/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     9.531 r  stateTest/randomNumberGenerator/seed1__0/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.533    stateTest/randomNumberGenerator/seed1__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    11.051 r  stateTest/randomNumberGenerator/seed1__1/P[0]
+                         net (fo=2, routed)           0.716    11.768    stateTest/randomNumberGenerator/seed1__1_n_105
+    SLICE_X11Y70         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.507    12.275 r  stateTest/randomNumberGenerator/seed1_carry/CO[3]
+                         net (fo=1, routed)           0.000    12.275    stateTest/randomNumberGenerator/seed1_carry_n_0
+    SLICE_X11Y71         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    12.514 r  stateTest/randomNumberGenerator/seed1_carry__0/O[2]
+                         net (fo=1, routed)           0.595    13.109    stateTest/randomNumberGenerator/seed1_carry__0_n_5
+    SLICE_X12Y71         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.835    13.944 r  stateTest/randomNumberGenerator/seed0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    13.944    stateTest/randomNumberGenerator/seed0_carry__4_n_0
+    SLICE_X12Y72         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    14.176 r  stateTest/randomNumberGenerator/seed0_carry__5/O[0]
+                         net (fo=2, routed)           0.405    14.581    stateTest/randomNumberGenerator/p_2_in[25]
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/B[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         1.602    15.024    stateTest/randomNumberGenerator/clk_IBUF_BUFG
+    DSP48_X0Y29          DSP48E1                                      r  stateTest/randomNumberGenerator/seed1__1/CLK
+                         clock pessimism              0.275    15.299    
+                         clock uncertainty           -0.035    15.264    
+    DSP48_X0Y29          DSP48E1 (Setup_dsp48e1_CLK_B[8])
+                                                     -0.621    14.643    stateTest/randomNumberGenerator/seed1__1
+  -------------------------------------------------------------------
+                         required time                         14.643    
+                         arrival time                         -14.581    
+  -------------------------------------------------------------------
+                         slack                                  0.062    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.133ns  (arrival time - required time)
+  Source:                 reactionButton_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.208ns  (logic 0.141ns (67.788%)  route 0.067ns (32.212%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.030ns
+    Source Clock Delay      (SCD):    1.515ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.596     1.515    reactionButton_debouncer/DEBOUNCE_CLOCK/clk_IBUF_BUFG
+    SLICE_X7Y81          FDRE                                         r  reactionButton_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y81          FDRE (Prop_fdre_C_Q)         0.141     1.656 r  reactionButton_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/Q
+                         net (fo=2, routed)           0.067     1.723    reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/D[0]
+    SLICE_X7Y81          FDRE                                         r  reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.865     2.030    reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/clk_IBUF_BUFG
+    SLICE_X7Y81          FDRE                                         r  reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/C
+                         clock pessimism             -0.514     1.515    
+    SLICE_X7Y81          FDRE (Hold_fdre_C_D)         0.075     1.590    reactionButton_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.590    
+                         arrival time                           1.723    
+  -------------------------------------------------------------------
+                         slack                                  0.133    
+
+Slack (MET) :             0.153ns  (arrival time - required time)
+  Source:                 reactionButton_debouncer/shiftReg_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reactionButton_debouncer/shiftReg_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.812%)  route 0.116ns (45.188%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.028ns
+    Source Clock Delay      (SCD):    1.514ns
+    Clock Pessimism Removal (CPR):    0.479ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.595     1.514    reactionButton_debouncer/clk_IBUF_BUFG
+    SLICE_X1Y79          FDRE                                         r  reactionButton_debouncer/shiftReg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y79          FDRE (Prop_fdre_C_Q)         0.141     1.655 r  reactionButton_debouncer/shiftReg_reg[0]/Q
+                         net (fo=1, routed)           0.116     1.772    reactionButton_debouncer/shiftReg_reg_n_0_[0]
+    SLICE_X5Y79          FDRE                                         r  reactionButton_debouncer/shiftReg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.863     2.028    reactionButton_debouncer/clk_IBUF_BUFG
+    SLICE_X5Y79          FDRE                                         r  reactionButton_debouncer/shiftReg_reg[1]/C
+                         clock pessimism             -0.479     1.548    
+    SLICE_X5Y79          FDRE (Hold_fdre_C_D)         0.070     1.618    reactionButton_debouncer/shiftReg_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.618    
+                         arrival time                           1.772    
+  -------------------------------------------------------------------
+                         slack                                  0.153    
+
+Slack (MET) :             0.171ns  (arrival time - required time)
+  Source:                 reset_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.231ns  (logic 0.164ns (70.995%)  route 0.067ns (29.005%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.995ns
+    Source Clock Delay      (SCD):    1.481ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.562     1.481    reset_debouncer/DEBOUNCE_CLOCK/clk_IBUF_BUFG
+    SLICE_X12Y74         FDRE                                         r  reset_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y74         FDRE (Prop_fdre_C_Q)         0.164     1.645 r  reset_debouncer/DEBOUNCE_CLOCK/dividedClk_reg/Q
+                         net (fo=2, routed)           0.067     1.712    reset_debouncer/DEBOUNCE_CLOCK_EDGE/D[0]
+    SLICE_X12Y74         FDRE                                         r  reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.830     1.995    reset_debouncer/DEBOUNCE_CLOCK_EDGE/clk_IBUF_BUFG
+    SLICE_X12Y74         FDRE                                         r  reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]/C
+                         clock pessimism             -0.513     1.481    
+    SLICE_X12Y74         FDRE (Hold_fdre_C_D)         0.060     1.541    reset_debouncer/DEBOUNCE_CLOCK_EDGE/pipeline_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.541    
+                         arrival time                           1.712    
+  -------------------------------------------------------------------
+                         slack                                  0.171    
+
+Slack (MET) :             0.172ns  (arrival time - required time)
+  Source:                 COUNT_DOWN/CLOCK_1HZ/dividedClk_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.232ns  (logic 0.164ns (70.660%)  route 0.068ns (29.340%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.027ns
+    Source Clock Delay      (SCD):    1.511ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.592     1.511    COUNT_DOWN/CLOCK_1HZ/clk_IBUF_BUFG
+    SLICE_X2Y73          FDRE                                         r  COUNT_DOWN/CLOCK_1HZ/dividedClk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y73          FDRE (Prop_fdre_C_Q)         0.164     1.675 r  COUNT_DOWN/CLOCK_1HZ/dividedClk_reg/Q
+                         net (fo=2, routed)           0.068     1.743    COUNT_DOWN/CLOCK_1HZ_EDGE/D[0]
+    SLICE_X2Y73          FDRE                                         r  COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.862     2.027    COUNT_DOWN/CLOCK_1HZ_EDGE/clk_IBUF_BUFG
+    SLICE_X2Y73          FDRE                                         r  COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[0]/C
+                         clock pessimism             -0.515     1.511    
+    SLICE_X2Y73          FDRE (Hold_fdre_C_D)         0.060     1.571    COUNT_DOWN/CLOCK_1HZ_EDGE/pipeline_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.571    
+                         arrival time                           1.743    
+  -------------------------------------------------------------------
+                         slack                                  0.172    
+
+Slack (MET) :             0.193ns  (arrival time - required time)
+  Source:                 finalResult/CLOCK_1KHZ/dividedClk_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.278ns  (logic 0.141ns (50.759%)  route 0.137ns (49.241%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.028ns
+    Source Clock Delay      (SCD):    1.512ns
+    Clock Pessimism Removal (CPR):    0.500ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.593     1.512    finalResult/CLOCK_1KHZ/clk_IBUF_BUFG
+    SLICE_X4Y72          FDRE                                         r  finalResult/CLOCK_1KHZ/dividedClk_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y72          FDRE (Prop_fdre_C_Q)         0.141     1.653 r  finalResult/CLOCK_1KHZ/dividedClk_reg/Q
+                         net (fo=2, routed)           0.137     1.790    finalResult/CLOCK_1KHZ_EDGE/D[0]
+    SLICE_X4Y70          FDRE                                         r  finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.863     2.028    finalResult/CLOCK_1KHZ_EDGE/clk_IBUF_BUFG
+    SLICE_X4Y70          FDRE                                         r  finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[0]/C
+                         clock pessimism             -0.500     1.527    
+    SLICE_X4Y70          FDRE (Hold_fdre_C_D)         0.070     1.597    finalResult/CLOCK_1KHZ_EDGE/pipeline_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.597    
+                         arrival time                           1.790    
+  -------------------------------------------------------------------
+                         slack                                  0.193    
+
+Slack (MET) :             0.212ns  (arrival time - required time)
+  Source:                 reset_debouncer/shiftReg_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reset_debouncer/shiftReg_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.164ns (56.972%)  route 0.124ns (43.028%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.996ns
+    Source Clock Delay      (SCD):    1.482ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.563     1.482    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y76         FDRE (Prop_fdre_C_Q)         0.164     1.646 r  reset_debouncer/shiftReg_reg[3]/Q
+                         net (fo=2, routed)           0.124     1.770    reset_debouncer/shiftReg[3]
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.831     1.996    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[4]/C
+                         clock pessimism             -0.513     1.482    
+    SLICE_X10Y76         FDRE (Hold_fdre_C_D)         0.076     1.558    reset_debouncer/shiftReg_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.558    
+                         arrival time                           1.770    
+  -------------------------------------------------------------------
+                         slack                                  0.212    
+
+Slack (MET) :             0.224ns  (arrival time - required time)
+  Source:                 finalResult/display_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ssdCathode_reg[5]/D
+                            (rising edge-triggered cell FDSE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.186ns (52.767%)  route 0.166ns (47.233%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.036ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.026ns
+    Source Clock Delay      (SCD):    1.510ns
+    Clock Pessimism Removal (CPR):    0.479ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.591     1.510    finalResult/clk_IBUF_BUFG
+    SLICE_X1Y75          FDRE                                         r  finalResult/display_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y75          FDRE (Prop_fdre_C_Q)         0.141     1.651 r  finalResult/display_reg[0]/Q
+                         net (fo=8, routed)           0.166     1.818    finalResult/display[0]
+    SLICE_X1Y74          LUT6 (Prop_lut6_I4_O)        0.045     1.863 r  finalResult/ssdCathode[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.863    finalResult_n_0
+    SLICE_X1Y74          FDSE                                         r  ssdCathode_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.861     2.026    clk_IBUF_BUFG
+    SLICE_X1Y74          FDSE                                         r  ssdCathode_reg[5]/C
+                         clock pessimism             -0.479     1.546    
+    SLICE_X1Y74          FDSE (Hold_fdse_C_D)         0.092     1.638    ssdCathode_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.638    
+                         arrival time                           1.863    
+  -------------------------------------------------------------------
+                         slack                                  0.224    
+
+Slack (MET) :             0.228ns  (arrival time - required time)
+  Source:                 COUNT_DOWN/countingDown_reg[1]/C
+                            (rising edge-triggered cell FDSE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            COUNT_DOWN/countingDown_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.349ns  (logic 0.246ns (70.537%)  route 0.103ns (29.463%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.030ns
+    Source Clock Delay      (SCD):    1.513ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.594     1.513    COUNT_DOWN/clk_IBUF_BUFG
+    SLICE_X2Y71          FDSE                                         r  COUNT_DOWN/countingDown_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y71          FDSE (Prop_fdse_C_Q)         0.148     1.661 r  COUNT_DOWN/countingDown_reg[1]/Q
+                         net (fo=14, routed)          0.103     1.764    COUNT_DOWN/countingDown_reg__0[1]
+    SLICE_X2Y71          LUT3 (Prop_lut3_I2_O)        0.098     1.862 r  COUNT_DOWN/countingDown[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.862    COUNT_DOWN/countingDown0[2]
+    SLICE_X2Y71          FDRE                                         r  COUNT_DOWN/countingDown_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.865     2.030    COUNT_DOWN/clk_IBUF_BUFG
+    SLICE_X2Y71          FDRE                                         r  COUNT_DOWN/countingDown_reg[2]/C
+                         clock pessimism             -0.516     1.513    
+    SLICE_X2Y71          FDRE (Hold_fdre_C_D)         0.121     1.634    COUNT_DOWN/countingDown_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.634    
+                         arrival time                           1.862    
+  -------------------------------------------------------------------
+                         slack                                  0.228    
+
+Slack (MET) :             0.232ns  (arrival time - required time)
+  Source:                 reset_debouncer/shiftReg_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reset_debouncer/shiftReg_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.164ns (57.535%)  route 0.121ns (42.465%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.996ns
+    Source Clock Delay      (SCD):    1.482ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.563     1.482    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y76         FDRE (Prop_fdre_C_Q)         0.164     1.646 r  reset_debouncer/shiftReg_reg[4]/Q
+                         net (fo=2, routed)           0.121     1.767    reset_debouncer/shiftReg[4]
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.831     1.996    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[5]/C
+                         clock pessimism             -0.513     1.482    
+    SLICE_X10Y76         FDRE (Hold_fdre_C_D)         0.053     1.535    reset_debouncer/shiftReg_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.535    
+                         arrival time                           1.767    
+  -------------------------------------------------------------------
+                         slack                                  0.232    
+
+Slack (MET) :             0.237ns  (arrival time - required time)
+  Source:                 reset_debouncer/shiftReg_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            reset_debouncer/shiftReg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.327ns  (logic 0.164ns (50.137%)  route 0.163ns (49.863%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.996ns
+    Source Clock Delay      (SCD):    1.482ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.563     1.482    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y76         FDRE (Prop_fdre_C_Q)         0.164     1.646 r  reset_debouncer/shiftReg_reg[1]/Q
+                         net (fo=2, routed)           0.163     1.809    reset_debouncer/shiftReg[1]
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=378, routed)         0.831     1.996    reset_debouncer/clk_IBUF_BUFG
+    SLICE_X10Y76         FDRE                                         r  reset_debouncer/shiftReg_reg[2]/C
+                         clock pessimism             -0.513     1.482    
+    SLICE_X10Y76         FDRE (Hold_fdre_C_D)         0.090     1.572    reset_debouncer/shiftReg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.572    
+                         arrival time                           1.809    
+  -------------------------------------------------------------------
+                         slack                                  0.237    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y69     COUNT_DOWN/CLOCK_1HZ/counter_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y73     COUNT_DOWN/CLOCK_1HZ/counter_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X3Y73     COUNT_DOWN/CLOCK_1HZ/counter_reg[17]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X5Y73     finalResult/CLOCK_1KHZ/counter_reg[20]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X5Y73     finalResult/CLOCK_1KHZ/counter_reg[21]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X5Y73     finalResult/CLOCK_1KHZ/counter_reg[22]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X5Y73     finalResult/CLOCK_1KHZ/counter_reg[23]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y76     reactionButton_debouncer/DEBOUNCE_CLOCK/counter_reg[4]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y76     reactionButton_debouncer/DEBOUNCE_CLOCK/counter_reg[5]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y76     reactionButton_debouncer/DEBOUNCE_CLOCK/counter_reg[6]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X6Y76     reactionButton_debouncer/DEBOUNCE_CLOCK/counter_reg[7]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y76     reactionTimer/CLOCK_1KHZ/counter_reg[16]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X7Y76     reactionTimer/CLOCK_1KHZ/counter_reg[17]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X0Y83     led_reg[15]_lopt_replica_10/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X0Y65     led_reg[15]_lopt_replica_13/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y69     COUNT_DOWN/CLOCK_1HZ/counter_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y71     COUNT_DOWN/CLOCK_1HZ/counter_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y72     COUNT_DOWN/CLOCK_1HZ/counter_reg[14]/C
+
+
+

@@ -6,7 +6,7 @@
 <Project Version="7" Minor="35" Path="C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="0ec7746225f34961966ba8c87ce56866"/>
+    <Option Name="Id" Val="4899f1b7c16e42849a4f0a79e9fb0cca"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -55,71 +55,91 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../sources/LCG.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/LCG.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/LCG.v"/>
+          <Attr Name="ImportTime" Val="1523425426"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/clockDivider.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/clockDivider.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/clockDivider.v"/>
+          <Attr Name="ImportTime" Val="1523438337"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/countingDown.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/countingDown.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/countingDown.v"/>
+          <Attr Name="ImportTime" Val="1523441085"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/debouncer.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/debouncer.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/debouncer.v"/>
+          <Attr Name="ImportTime" Val="1521535076"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/edgeDetector.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/edgeDetector.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/edgeDetector.v"/>
+          <Attr Name="ImportTime" Val="1521149410"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/result.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/result.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/result.v"/>
+          <Attr Name="ImportTime" Val="1523440375"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/sevenSegmentDecoder.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/sevenSegmentDecoder.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/sevenSegmentDecoder.v"/>
+          <Attr Name="ImportTime" Val="1523425426"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/test.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/test.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/test.v"/>
+          <Attr Name="ImportTime" Val="1523439921"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/time_Accumulator.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/time_Accumulator.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/time_Accumulator.v"/>
+          <Attr Name="ImportTime" Val="1523442227"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../sources/reactionTimer_TOP.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources/reactionTimer_TOP.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../sources/reactionTimer_TOP.v"/>
+          <Attr Name="ImportTime" Val="1523442156"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -133,8 +153,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../constrains/Nexyx4_DDR_state_description_constrains.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../constrains/Nexyx4_DDR_state_description_constrains.xdc"/>
+          <Attr Name="ImportTime" Val="1523440438"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

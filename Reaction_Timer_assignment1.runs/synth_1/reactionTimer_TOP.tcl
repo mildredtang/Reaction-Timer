@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,16 +29,16 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/LCG.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/clockDivider.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/countingDown.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/debouncer.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/edgeDetector.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/result.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/sevenSegmentDecoder.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/test.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/time_Accumulator.v}
-  {C:/Users/Wendy Li/Desktop/FPGA1/sources/reactionTimer_TOP.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/LCG.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/clockDivider.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/countingDown.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/debouncer.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/edgeDetector.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/result.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/sevenSegmentDecoder.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/test.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/time_Accumulator.v}
+  {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/sources_1/imports/sources/reactionTimer_TOP.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -47,8 +48,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Wendy Li/Desktop/FPGA1/constrains/Nexyx4_DDR_state_description_constrains.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Wendy Li/Desktop/FPGA1/constrains/Nexyx4_DDR_state_description_constrains.xdc}}]
+read_xdc {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc}}]
 
 
 synth_design -top reactionTimer_TOP -part xc7a100tcsg324-1
