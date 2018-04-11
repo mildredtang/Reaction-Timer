@@ -68,11 +68,11 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1/Reaction_Timer_assignment1.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1/Reaction_Timer_assignment1.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1/Reaction_Timer_assignment1.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1/Reaction_Timer_assignment1.runs/synth_1/reactionTimer_TOP.dcp}}
+  add_files -quiet {{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/synth_1/reactionTimer_TOP.dcp}}
   read_xdc {{C:/Users/Wendy Li/Desktop/FPGA1/constrains/Nexyx4_DDR_state_description_constrains.xdc}}
   link_design -top reactionTimer_TOP -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

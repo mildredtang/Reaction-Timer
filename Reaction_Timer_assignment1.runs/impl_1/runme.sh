@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1/Reaction_Timer_assignment1.runs/impl_1'
+HD_PWD='C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

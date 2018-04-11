@@ -1,0 +1,361 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 8488
+License: Customer
+
+Current time: 	Wed Apr 11 17:50:55 AEST 2018
+Time zone: 	Australian Eastern Standard Time (New South Wales) (Australia/Sydney)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1440x960
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 375 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Wendy Li
+User home directory: C:/Users/Wendy Li
+User working directory: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Wendy Li/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Wendy Li/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Wendy Li/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/vivado.log
+Vivado journal file location: 	C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/vivado.jou
+Engine tmp dir: 	C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/.Xil/Vivado-8488-DESKTOP-LPJ199K
+
+GUI allocated memory:	208 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 618 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Wendy Li\Desktop\FPGA1\project\Reaction_Timer_assignment1_git\Reaction_Timer_assignment1.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// [GUI Memory]: 64 MB (+64835kb) [00:00:08]
+// [Engine Memory]: 496 MB (+368155kb) [00:00:08]
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 583 MB (+65734kb) [00:00:09]
+// [GUI Memory]: 79 MB (+12404kb) [00:00:11]
+// [Engine Memory]: 615 MB (+2975kb) [00:00:11]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 37 MB. Current time: 4/11/18 5:50:55 PM AEST
+// Project name: Reaction_Timer_assignment1; location: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "3 errors"); // h (N, cj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'led' should not be used in output port connection [C:/Users/Wendy Li/Desktop/FPGA1/sources/reactionTimer_TOP.v:96]. ]", 1, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Wendy Li\Desktop\FPGA1\sources\reactionTimer_TOP.v;-;;-;16;-;line;-;96;-;;-;16;-;"); // ah (O, cj)
+// PAPropertyPanels.initPanels (reactionTimer_TOP.v) elapsed time: 0.3s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reactionTimer_TOP (reactionTimer_TOP.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reactionTimer_TOP (reactionTimer_TOP.v), reset_debouncer : debouncer (debouncer.v)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reactionTimer_TOP (reactionTimer_TOP.v), triggerPre_debouncer : debouncer (debouncer.v)]", 3, true); // B (D, cj) - Node
+selectCodeEditor("reactionTimer_TOP.v", 91, 162); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 91, 162, false, false, false, false, true); // cd (w, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reactionTimer_TOP (reactionTimer_TOP.v), UUT : result (result.v)]", 5, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reactionTimer_TOP (reactionTimer_TOP.v), UUT : result (result.v), BCD_TO_SSD : sevenSegmentDecoder (sevenSegmentDecoder.v)]", 9, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("result.v", 229, 95); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reactionTimer_TOP.v", 1); // k (j, cj)
+selectCodeEditor("reactionTimer_TOP.v", 110, 147); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("reactionTimer_TOP.v", 98, 158); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 98, 158, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 88, 159); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 88, 159, false, false, false, false, true); // cd (w, cj) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x (cj): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bs (cj):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 11 17:51:50 2018] Launched synth_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/synth_1/runme.log [Wed Apr 11 17:51:50 2018] Launched impl_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+selectCodeEditor("reactionTimer_TOP.v", 153, 168); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 92, 167); // cd (w, cj)
+// [GUI Memory]: 84 MB (+681kb) [00:01:23]
+// Elapsed time: 10 seconds
+selectCodeEditor("reactionTimer_TOP.v", 128, 35); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 128, 35, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 153, 298); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 153, 298, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 58, 162); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 58, 162, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Implementation Failed: addNotify
+// Elapsed time: 115 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (cj)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net COUNT_DOWN/ssdCathode_OBUF[1] has multiple drivers: COUNT_DOWN/ssdCathode_OBUF[2]_inst_i_1/O, and ssdCathode_OBUF[2]_inst_i_2/O.. ]", 11, true); // ah (O, cj) - Node
+selectCodeEditor("reactionTimer_TOP.v", 206, 267); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 71, 227); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 71, 227, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 167, 182); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 167, 182, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("reactionTimer_TOP.v", 83, 168); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 83, 168, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 143, 229); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 143, 229, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 89, 100); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 89, 100, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("reactionTimer_TOP.v", 101, 194); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 101, 194, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 83, 79); // cd (w, cj)
+// [GUI Memory]: 89 MB (+1448kb) [00:04:17]
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 165, 234); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 165, 234, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 166, 87); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 166, 87, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 170, 100); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 170, 100, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 183, 203); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 183, 203, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 106, 153); // cd (w, cj)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 147, 320); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 147, 320, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 158, 190); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 158, 190, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 187, 302); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 187, 302, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 156, 245); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 178, 163); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 178, 163, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 187, 188); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 187, 188, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 188, 165); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 188, 165, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 195, 247); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("reactionTimer_TOP.v", 159, 257); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 159, 257, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 239, 226); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 167, 143); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 171, 140); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 171, 140, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 343, 225); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 162, 32); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 162, 32, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 476, 230); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 25, 317); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 133, 309); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 270, 295); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 270, 295, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 227, 313); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 170, 212); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 170, 212, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 327, 313); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 155, 53); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 155, 53, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 431, 251); // cd (w, cj)
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'v'); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Apr 11 17:57:21 2018] Launched synth_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/synth_1/runme.log [Wed Apr 11 17:57:21 2018] Launched impl_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// [GUI Memory]: 95 MB (+1279kb) [00:07:35]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (cj): Bitstream Generation Failed: addNotify
+// Elapsed time: 306 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (cj)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF (Q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexyx4_DDR_state_description_constrains.xdc]", 9, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexyx4_DDR_state_description_constrains.xdc]", 9, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexyx4_DDR_state_description_constrains.xdc]", 9, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 100 MB (+15kb) [00:11:59]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "port;-;reactionButtonRaw;-;;-;10;-;"); // ah (O, cj)
+selectButton("PAResourceItoN.MsgUtils_TO_SELECT_THIS_OBJECT_YOU_MUST_OPEN_No", "No"); // JButton (A, G)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 512, 67); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reactionTimer_TOP.v", 1); // k (j, cj)
+selectCodeEditor("reactionTimer_TOP.v", 217, 224); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 135, 102); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 135, 102, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 3); // k (j, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 561, 12); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 561, 12, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 'v'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reactionTimer_TOP.v", 1); // k (j, cj)
+selectCodeEditor("reactionTimer_TOP.v", 161, 122); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 161, 122, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("reactionTimer_TOP.v", 168, 116); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 168, 116, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 3); // k (j, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 580, 41); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 580, 41, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 631, 36); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 625, 40); // cd (w, cj)
+typeControlKey((HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 'c'); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 22, 60); // cd (w, cj)
+typeControlKey((HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 'v'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reactionTimer_TOP.v", 1); // k (j, cj)
+selectCodeEditor("reactionTimer_TOP.v", 183, 148); // cd (w, cj)
+selectCodeEditor("reactionTimer_TOP.v", 183, 148, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "reactionTimer_TOP.v", 'c'); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 3); // k (j, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 534, 63); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 534, 63, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "Nexyx4_DDR_state_description_constrains.xdc", 'v'); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 566, 80); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 654, 48); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 611, 97); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 267, 32); // cd (w, cj)
+// Elapsed time: 13 seconds
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 266, 56); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 574, 168); // cd (w, cj)
+selectCodeEditor("Nexyx4_DDR_state_description_constrains.xdc", 677, 164); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (x)
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// bs (cj):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr 11 18:04:28 2018] Launched synth_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/synth_1/runme.log [Wed Apr 11 18:04:28 2018] Launched impl_1... Run output will be captured here: C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bs (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 45 MB. Current time: 4/11/18 6:04:30 PM AEST
+// [Engine Memory]: 652 MB (+6192kb) [00:14:07]
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
