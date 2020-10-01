@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+// Description : Display counter down on seven segment display in PREPARATION state.
+
 module countingDown(
 	input wire clk,
 	input wire reset,

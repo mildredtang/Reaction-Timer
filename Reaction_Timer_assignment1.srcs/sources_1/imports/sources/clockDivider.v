@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module clockDivider #( //module intergerClockDivider
+module clockDivider #(
     parameter integer THRESHOLD = 50_000
 )(
     input wire clk,

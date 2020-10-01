@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+// Description : Debounce to get the stable signals.
+
 module debouncer #(
     parameter integer THRESHOLD = 50
 )(

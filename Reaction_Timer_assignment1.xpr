@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/Wendy Li/Desktop/FPGA1/project/ENGN3213_Assignment1_u5962182_u5853650/Reaction_Timer_assignment1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4899f1b7c16e42849a4f0a79e9fb0cca"/>
@@ -59,6 +59,13 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../sources/LCG.v"/>
           <Attr Name="ImportTime" Val="1523425426"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources/autoReset.v">
+        <FileInfo RelPath="autoReset.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

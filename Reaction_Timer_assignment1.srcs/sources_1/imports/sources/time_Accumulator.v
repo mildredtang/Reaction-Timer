@@ -1,10 +1,13 @@
 `timescale 1ns / 1ps
 
+// Description : Count the reaction time of user in TEST state.
+
 module time_Accumulator(
 	input wire clk,
 	input wire reset,
 	input wire startWorking,
 	input wire reactionButton,
+	input wire zeroAccu,
 	output reg [3:0] rt_d0 = 4'd0, //reaction time of the user. record the number from the rightmost to leftmost respectively by d0 to d3
 	output reg [3:0] rt_d1 = 4'd0,
     output reg [3:0] rt_d2 = 4'd0,
@@ -18,7 +21,7 @@ module time_Accumulator(
 	reg state = IDLE;
 
 	always @(posedge clk_1kHz) begin
-		if (reset) begin
+		if (reset == 1 || zeroAccu == 1) begin
 	        rt_d0 <= 4'd0;
 	        rt_d1 <= 4'd0;
 	        rt_d2 <= 4'd0;

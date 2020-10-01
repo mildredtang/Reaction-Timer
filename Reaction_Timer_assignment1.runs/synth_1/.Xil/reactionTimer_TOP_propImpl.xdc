@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Wendy Li/Desktop/FPGA1/project/Reaction_Timer_assignment1_git/Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc} rfile:../../../Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/Wendy Li/Desktop/FPGA1/project/ENGN3213_Assignment1_u5962182_u5853650/Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc} rfile:../../../Reaction_Timer_assignment1.srcs/constrs_1/imports/constrains/Nexyx4_DDR_state_description_constrains.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN M18 IOSTANDARD LVCMOS33 } [get_ports resetRaw]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

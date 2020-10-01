@@ -1,4 +1,7 @@
+
 `timescale 1ns / 1ps
+
+// Description : TOP Module of Reaction Time Test.
 
 module reactionTimer_TOP(
     input wire clk, 
@@ -9,7 +12,7 @@ module reactionTimer_TOP(
     output reg [7:0] ssdAnode = 8'hFF,
     output reg [15:0] led = 16'd0);
 
-    // instantiate debouncer to obtain stable signals
+    // instantiate debouncer to obtain stable signals.
     wire reset, triggerPre, triggerTest, reactionButton; // debounced buttons
 
     debouncer reset_debouncer(
@@ -42,29 +45,14 @@ module reactionTimer_TOP(
     wire [7:0] resultCathode, resultAnode;
     wire [7:0] prepareCathode, prepareAnode;
 
-    wire [3:0] rt_d0; //reaction time of the user. record the number from the rightmost to leftmost respectively by d0 to d3
+    wire [3:0] rt_d0; // reaction time of the user. record the number from the rightmost to leftmost respectively by d0 to d3.
     wire [3:0] rt_d1;
     wire [3:0] rt_d2;
     wire [3:0] rt_d3;
     wire startTesting;
-    time_Accumulator reactionTimer(
-        .clk(clk),
-        .reset(resetRaw),
-        .startWorking(startTesting),
-        .reactionButton(reactionButton),
-        .rt_d0(rt_d0),
-        .rt_d1(rt_d1),
-        .rt_d2(rt_d2),
-        .rt_d3(rt_d3));
-    
     wire testFail;
-    test stateTest(
-        .clk(clk),
-        .reset(reset),
-        .reactionButton(reactionButton),
-        .startWorking(state == TEST),
-        .startTesting(startTesting),
-        .testFail(testFail));
+    wire timeOut;
+    reg zeroAccu;
 
     always @(posedge clk) begin
         if (reset) begin
@@ -95,6 +83,7 @@ module reactionTimer_TOP(
                     if (reactionButton) begin
                         state <= RESULT;
                     end
+                    zeroAccu <= 0; // Prevent time_Accumulator reset to zero.
                     // No SSD Output.
                     ssdCathode <= 8'hFF;
                     ssdAnode <= 8'hFF;
@@ -105,14 +94,22 @@ module reactionTimer_TOP(
                     ssdCathode <= resultCathode;
                     ssdAnode <= resultAnode;
                     led <= 16'd0;
+                    // Auto reset to IDLE after ten seconds.
+                    if (timeOut == 1'b1) begin
+                        zeroAccu  <= 1'b1; // In order to reset time_Accumulator to zero.
+                        state <= IDLE;
+                        ssdCathode <= 8'hFF;
+                        ssdAnode <= 8'hFF;
+                    end
                 end
-                 default : begin
-                     state <= IDLE;
-                 end
+                default : begin
+                    state <= IDLE;
+                end
             endcase
         end
     end
     
+    // instantiate result to display reaction time of user on seven segment display.
     result finalResult(
         .rt_d0(rt_d0),
         .rt_d1(rt_d1),
@@ -125,7 +122,8 @@ module reactionTimer_TOP(
         .ssdAnode(resultAnode)
     );
     
-    countingDown COUNT_DOWN(
+    // instantiate countingDown to display countdown on seven segment display.
+    countingDown countDown(
         .clk(clk),
         .reset(reset),
         .startWorking(state == PREPARATION),
@@ -134,8 +132,39 @@ module reactionTimer_TOP(
         .triggerTest(triggerTest)
     );
     
-    //assign ssdCathode = (state == PREPARATION) ? prepareCathode : resultCathode;
-    //assign ssdAnode = (state == PREPARATION) ? prepareAnode : resultAnode;
+    // instantiate time_Accumulator to count reaction time of user.
+    time_Accumulator reactionTimer(
+        .clk(clk),
+        .reset(reset),
+        .startWorking(startTesting),
+        .reactionButton(reactionButton),
+        .zeroAccu(zeroAccu),
+        .rt_d0(rt_d0),
+        .rt_d1(rt_d1),
+        .rt_d2(rt_d2),
+        .rt_d3(rt_d3)
+    );
+    
+    // instantiate test to reflect reaction test of user. Test will begin after preparation and terminate as soon as user presses reaction button.
+    test stateTest(
+        .clk(clk),
+        .reset(reset),
+        .reactionButton(reactionButton),
+        .startWorking(state == TEST),
+        .startTesting(startTesting),
+        .testFail(testFail)
+    );
+
+    // instantiate autoReset to auto reset the test to IDLE after ten seconds if user does not press reset button.
+    autoReset #(
+        .THRESHOLD(4'd10)
+    ) tenSeconds (
+        .clk(clk),
+        .reset(reset),
+        .startWorking(state == RESULT),
+        .stopWorking(state == IDLE),
+        .timeOut(timeOut)
+    );
+    
     
 endmodule
-
